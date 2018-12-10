@@ -1,0 +1,7 @@
+C:\Users\1\source\repos\TeamIdea_task1\TeamIdea_task1\bin\Debug\TeamIdea_task1.exe.config
+C:\Users\1\source\repos\TeamIdea_task1\TeamIdea_task1\bin\Debug\TeamIdea_task1.exe
+C:\Users\1\source\repos\TeamIdea_task1\TeamIdea_task1\bin\Debug\TeamIdea_task1.pdb
+C:\Users\1\source\repos\TeamIdea_task1\TeamIdea_task1\obj\Debug\TeamIdea_task1.csprojResolveAssemblyReference.cache
+C:\Users\1\source\repos\TeamIdea_task1\TeamIdea_task1\obj\Debug\TeamIdea_task1.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\TeamIdea_task1\TeamIdea_task1\obj\Debug\TeamIdea_task1.exe
+C:\Users\1\source\repos\TeamIdea_task1\TeamIdea_task1\obj\Debug\TeamIdea_task1.pdb
