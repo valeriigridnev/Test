@@ -1,0 +1,7 @@
+C:\Users\1\source\repos\Qoden_task1\Qoden_task1\bin\Debug\Qoden_task1.exe.config
+C:\Users\1\source\repos\Qoden_task1\Qoden_task1\bin\Debug\Qoden_task1.exe
+C:\Users\1\source\repos\Qoden_task1\Qoden_task1\bin\Debug\Qoden_task1.pdb
+C:\Users\1\source\repos\Qoden_task1\Qoden_task1\obj\Debug\Qoden_task1.csprojResolveAssemblyReference.cache
+C:\Users\1\source\repos\Qoden_task1\Qoden_task1\obj\Debug\Qoden_task1.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\Qoden_task1\Qoden_task1\obj\Debug\Qoden_task1.exe
+C:\Users\1\source\repos\Qoden_task1\Qoden_task1\obj\Debug\Qoden_task1.pdb
