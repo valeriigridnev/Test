@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
@@ -15,7 +16,10 @@ namespace kosta_test
     public partial class Form1 : Form
     {
         static string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\1\source\repos\GitHub\Test\kosta_test\kosta_test\TestDB.mdf; Integrated Security = True";
-
+       /* static private string connectionString = ConfigurationManager
+            .ConnectionStrings[
+                "kosta_test.Properties.Settings.TestDBConnectionStringkosta_test.Properties.Settings.TestDBConnectionString"]
+            .ConnectionString;*/
         SqlConnection sqlConnection = new SqlConnection(connectionString);
 
         public Form1()
@@ -28,10 +32,6 @@ namespace kosta_test
          {
              treeView1.Nodes.Clear();;
              await sqlConnection.OpenAsync();
-             
-             
-
-
          }
 
 
@@ -127,25 +127,25 @@ namespace kosta_test
         {
             if (label11.Visible)
                 label11.Visible = false;
-            if (!string.IsNullOrEmpty(textBox2.Text) && !string.IsNullOrWhiteSpace(textBox2.Text) && !string.IsNullOrEmpty(textBox3.Text) && !string.IsNullOrWhiteSpace(textBox3.Text) &&
-                !string.IsNullOrEmpty(textBox5.Text) && !string.IsNullOrWhiteSpace(textBox5.Text) && !string.IsNullOrEmpty(textBox6.Text) && !string.IsNullOrWhiteSpace(textBox6.Text) &&
-                !string.IsNullOrEmpty(textBox7.Text) && !string.IsNullOrWhiteSpace(textBox7.Text) && !string.IsNullOrEmpty(textBox8.Text) && !string.IsNullOrWhiteSpace(textBox8.Text) &&
-                !string.IsNullOrEmpty(textBox9.Text) && !string.IsNullOrWhiteSpace(textBox9.Text) && !string.IsNullOrEmpty(textBox10.Text) && !string.IsNullOrWhiteSpace(textBox10.Text))
+            if (!string.IsNullOrEmpty(Имя.Text) && !string.IsNullOrWhiteSpace(Имя.Text) && !string.IsNullOrEmpty(Фамилия.Text) && !string.IsNullOrWhiteSpace(Фамилия.Text) &&
+                !string.IsNullOrEmpty(Др.Text) && !string.IsNullOrWhiteSpace(Др.Text) && !string.IsNullOrEmpty(Серия.Text) && !string.IsNullOrWhiteSpace(Серия.Text) &&
+                !string.IsNullOrEmpty(Номер.Text) && !string.IsNullOrWhiteSpace(Номер.Text) && !string.IsNullOrEmpty(Должность.Text) && !string.IsNullOrWhiteSpace(Должность.Text) &&
+                !string.IsNullOrEmpty(Отдел.Text) && !string.IsNullOrWhiteSpace(Отдел.Text) && !string.IsNullOrEmpty(ID.Text) && !string.IsNullOrWhiteSpace(ID.Text))
             {
                 SqlCommand command = new SqlCommand("UPDATE [Empoyee] SET [FirstName] = @FirstName, [SurName]= @SurName, " +
                                                     "[Patronymic]=@Patronymic, [DateOfBirth]=@DateOfBirth," +
                                                     "[DocSeries]=@DocSeries, [DocNumber]=@DocNumber," +
                                                     "[Position]=@Position, [DepartmentID]=@DepartmentID " +
                                                     "where [ID] = @ID");
-                command.Parameters.AddWithValue("FirstName", textBox2.Text);
-                command.Parameters.AddWithValue("SurName", textBox3.Text);
-                command.Parameters.AddWithValue("Patronymic", textBox4.Text);
-                command.Parameters.AddWithValue("DateOfBirth", textBox5.Text);
-                command.Parameters.AddWithValue("DocSeries", textBox6.Text);
-                command.Parameters.AddWithValue("DocNumber", textBox7.Text);
-                command.Parameters.AddWithValue("Position", textBox8.Text);
-                command.Parameters.AddWithValue("DepartmentID", textBox9.Text);
-                command.Parameters.AddWithValue("ID", textBox10.Text);
+                command.Parameters.AddWithValue("FirstName", Имя.Text);
+                command.Parameters.AddWithValue("SurName", Фамилия.Text);
+                command.Parameters.AddWithValue("Patronymic", Отчество.Text);
+                command.Parameters.AddWithValue("DateOfBirth", Др.Text);
+                command.Parameters.AddWithValue("DocSeries", Серия.Text);
+                command.Parameters.AddWithValue("DocNumber", Номер.Text);
+                command.Parameters.AddWithValue("Position", Должность.Text);
+                command.Parameters.AddWithValue("DepartmentID", Отдел.Text);
+                command.Parameters.AddWithValue("ID", ID.Text);
             }
             else
             {
@@ -165,23 +165,23 @@ namespace kosta_test
             {
 
                 label1.Visible = true;
-                textBox10.Visible = true;
+                ID.Visible = true;
                 label2.Visible = true;
-                textBox2.Visible = true;
+                Имя.Visible = true;
                 label3.Visible = true;
-                textBox3.Visible = true;
+                Фамилия.Visible = true;
                 label4.Visible = true;
-                textBox4.Visible = true;
+                Отчество.Visible = true;
                 label5.Visible = true;
-                textBox5.Visible = true;
+                Др.Visible = true;
                 label6.Visible = true;
-                textBox6.Visible = true;
+                Серия.Visible = true;
                 label7.Visible = true;
-                textBox7.Visible = true;
+                Номер.Visible = true;
                 label8.Visible = true;
-                textBox8.Visible = true;
+                Должность.Visible = true;
                 label9.Visible = true;
-                textBox9.Visible = true;
+                Отдел.Visible = true;
                 button2.Visible = true;
 
             }
@@ -193,25 +193,25 @@ namespace kosta_test
         {
             if (label11.Visible)
                 label11.Visible = false;
-            if (!string.IsNullOrEmpty(textBox2.Text) && !string.IsNullOrWhiteSpace(textBox2.Text) &&
-                !string.IsNullOrEmpty(textBox3.Text) && !string.IsNullOrWhiteSpace(textBox3.Text) &&
-                !string.IsNullOrEmpty(textBox5.Text) && !string.IsNullOrWhiteSpace(textBox5.Text) &&
-                !string.IsNullOrEmpty(textBox6.Text) && !string.IsNullOrWhiteSpace(textBox6.Text) &&
-                !string.IsNullOrEmpty(textBox7.Text) && !string.IsNullOrWhiteSpace(textBox7.Text) &&
-                !string.IsNullOrEmpty(textBox8.Text) && !string.IsNullOrWhiteSpace(textBox8.Text) &&
-                !string.IsNullOrEmpty(textBox9.Text) && !string.IsNullOrWhiteSpace(textBox9.Text))
+            if (!string.IsNullOrEmpty(Имя.Text) && !string.IsNullOrWhiteSpace(Имя.Text) &&
+                !string.IsNullOrEmpty(Фамилия.Text) && !string.IsNullOrWhiteSpace(Фамилия.Text) &&
+                !string.IsNullOrEmpty(Др.Text) && !string.IsNullOrWhiteSpace(Др.Text) &&
+                !string.IsNullOrEmpty(Серия.Text) && !string.IsNullOrWhiteSpace(Серия.Text) &&
+                !string.IsNullOrEmpty(Номер.Text) && !string.IsNullOrWhiteSpace(Номер.Text) &&
+                !string.IsNullOrEmpty(Должность.Text) && !string.IsNullOrWhiteSpace(Должность.Text) &&
+                !string.IsNullOrEmpty(Отдел.Text) && !string.IsNullOrWhiteSpace(Отдел.Text))
             {
                 SqlCommand command = new SqlCommand("INSERT INTO [Empoyee] (FirstName, SureName, Patronymic, DateOfBirth, DocSeries, DocNumber, Position, DepartmentID)" +
                                                     "VALUES(@FirstName, @SureName, @Patronymic, @DateOfBirth, @DocSeries, @DocNumber, @Position, @DepartmentID)");
 
-                command.Parameters.AddWithValue("FirstName", textBox2.Text);
-                command.Parameters.AddWithValue("SurName", textBox3.Text);
-                command.Parameters.AddWithValue("Patronymic", textBox4.Text);
-                command.Parameters.AddWithValue("DateOfBirth", textBox5.Text);
-                command.Parameters.AddWithValue("DocSeries", textBox6.Text);
-                command.Parameters.AddWithValue("DocNumber", textBox7.Text);
-                command.Parameters.AddWithValue("Position", textBox8.Text);
-                command.Parameters.AddWithValue("DepartmentID", textBox9.Text);
+                command.Parameters.AddWithValue("FirstName", Имя.Text);
+                command.Parameters.AddWithValue("SurName", Фамилия.Text);
+                command.Parameters.AddWithValue("Patronymic", Отчество.Text);
+                command.Parameters.AddWithValue("DateOfBirth", Др.Text);
+                command.Parameters.AddWithValue("DocSeries", Серия.Text);
+                command.Parameters.AddWithValue("DocNumber", Номер.Text);
+                command.Parameters.AddWithValue("Position", Должность.Text);
+                command.Parameters.AddWithValue("DepartmentID", Отдел.Text);
 
             }
             else
@@ -229,23 +229,23 @@ namespace kosta_test
         {
 
             label1.Visible = true;
-            textBox10.Visible = true;
+            ID.Visible = true;
             label2.Visible = true;
-            textBox2.Visible = true;
+            Имя.Visible = true;
             label3.Visible = true;
-            textBox3.Visible = true;
+            Фамилия.Visible = true;
             label4.Visible = true;
-            textBox4.Visible = true;
+            Отчество.Visible = true;
             label5.Visible = true;
-            textBox5.Visible = true;
+            Др.Visible = true;
             label6.Visible = true;
-            textBox6.Visible = true;
+            Серия.Visible = true;
             label7.Visible = true;
-            textBox7.Visible = true;
+            Номер.Visible = true;
             label8.Visible = true;
-            textBox8.Visible = true;
+            Должность.Visible = true;
             label9.Visible = true;
-            textBox9.Visible = true;
+            Отдел.Visible = true;
             button3.Visible = true;
 
 

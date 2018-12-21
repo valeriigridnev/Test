@@ -42,15 +42,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ID = new System.Windows.Forms.TextBox();
+            this.Отдел = new System.Windows.Forms.TextBox();
+            this.Должность = new System.Windows.Forms.TextBox();
+            this.Номер = new System.Windows.Forms.TextBox();
+            this.Серия = new System.Windows.Forms.TextBox();
+            this.Др = new System.Windows.Forms.TextBox();
+            this.Отчество = new System.Windows.Forms.TextBox();
+            this.Фамилия = new System.Windows.Forms.TextBox();
+            this.Имя = new System.Windows.Forms.TextBox();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -75,15 +75,15 @@
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.textBox10);
-            this.tabPage1.Controls.Add(this.textBox9);
-            this.tabPage1.Controls.Add(this.textBox8);
-            this.tabPage1.Controls.Add(this.textBox7);
-            this.tabPage1.Controls.Add(this.textBox6);
-            this.tabPage1.Controls.Add(this.textBox5);
-            this.tabPage1.Controls.Add(this.textBox4);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.ID);
+            this.tabPage1.Controls.Add(this.Отдел);
+            this.tabPage1.Controls.Add(this.Должность);
+            this.tabPage1.Controls.Add(this.Номер);
+            this.tabPage1.Controls.Add(this.Серия);
+            this.tabPage1.Controls.Add(this.Др);
+            this.tabPage1.Controls.Add(this.Отчество);
+            this.tabPage1.Controls.Add(this.Фамилия);
+            this.tabPage1.Controls.Add(this.Имя);
             this.tabPage1.Controls.Add(this.treeView1);
             this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.listBox1);
@@ -231,79 +231,79 @@
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox10
+            // ID
             // 
-            this.textBox10.Location = new System.Drawing.Point(684, 289);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 22);
-            this.textBox10.TabIndex = 13;
-            this.textBox10.Visible = false;
+            this.ID.Location = new System.Drawing.Point(684, 289);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(100, 22);
+            this.ID.TabIndex = 13;
+            this.ID.Visible = false;
             // 
-            // textBox9
+            // Отдел
             // 
-            this.textBox9.Location = new System.Drawing.Point(684, 243);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 22);
-            this.textBox9.TabIndex = 12;
-            this.textBox9.Visible = false;
+            this.Отдел.Location = new System.Drawing.Point(684, 243);
+            this.Отдел.Name = "Отдел";
+            this.Отдел.Size = new System.Drawing.Size(100, 22);
+            this.Отдел.TabIndex = 12;
+            this.Отдел.Visible = false;
             // 
-            // textBox8
+            // Должность
             // 
-            this.textBox8.Location = new System.Drawing.Point(684, 200);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 22);
-            this.textBox8.TabIndex = 11;
-            this.textBox8.Visible = false;
+            this.Должность.Location = new System.Drawing.Point(684, 200);
+            this.Должность.Name = "Должность";
+            this.Должность.Size = new System.Drawing.Size(100, 22);
+            this.Должность.TabIndex = 11;
+            this.Должность.Visible = false;
             // 
-            // textBox7
+            // Номер
             // 
-            this.textBox7.Location = new System.Drawing.Point(480, 284);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 22);
-            this.textBox7.TabIndex = 10;
-            this.textBox7.Visible = false;
+            this.Номер.Location = new System.Drawing.Point(480, 284);
+            this.Номер.Name = "Номер";
+            this.Номер.Size = new System.Drawing.Size(100, 22);
+            this.Номер.TabIndex = 10;
+            this.Номер.Visible = false;
             // 
-            // textBox6
+            // Серия
             // 
-            this.textBox6.Location = new System.Drawing.Point(480, 243);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 9;
-            this.textBox6.Visible = false;
+            this.Серия.Location = new System.Drawing.Point(480, 243);
+            this.Серия.Name = "Серия";
+            this.Серия.Size = new System.Drawing.Size(100, 22);
+            this.Серия.TabIndex = 9;
+            this.Серия.Visible = false;
             // 
-            // textBox5
+            // Др
             // 
-            this.textBox5.Location = new System.Drawing.Point(480, 200);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 8;
-            this.textBox5.Visible = false;
+            this.Др.Location = new System.Drawing.Point(480, 200);
+            this.Др.Name = "Др";
+            this.Др.Size = new System.Drawing.Size(100, 22);
+            this.Др.TabIndex = 8;
+            this.Др.Visible = false;
             // 
-            // textBox4
+            // Отчество
             // 
-            this.textBox4.Location = new System.Drawing.Point(314, 284);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 7;
-            this.textBox4.Visible = false;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.Отчество.Location = new System.Drawing.Point(314, 284);
+            this.Отчество.Name = "Отчество";
+            this.Отчество.Size = new System.Drawing.Size(100, 22);
+            this.Отчество.TabIndex = 7;
+            this.Отчество.Visible = false;
+            this.Отчество.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // textBox3
+            // Фамилия
             // 
-            this.textBox3.Location = new System.Drawing.Point(314, 240);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.Visible = false;
+            this.Фамилия.Location = new System.Drawing.Point(314, 240);
+            this.Фамилия.Name = "Фамилия";
+            this.Фамилия.Size = new System.Drawing.Size(100, 22);
+            this.Фамилия.TabIndex = 6;
+            this.Фамилия.Visible = false;
             // 
-            // textBox2
+            // Имя
             // 
-            this.textBox2.Location = new System.Drawing.Point(314, 200);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Visible = false;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.Имя.Location = new System.Drawing.Point(314, 200);
+            this.Имя.Name = "Имя";
+            this.Имя.Size = new System.Drawing.Size(100, 22);
+            this.Имя.TabIndex = 5;
+            this.Имя.Visible = false;
+            this.Имя.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // treeView1
             // 
@@ -384,15 +384,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox ID;
+        private System.Windows.Forms.TextBox Отдел;
+        private System.Windows.Forms.TextBox Должность;
+        private System.Windows.Forms.TextBox Номер;
+        private System.Windows.Forms.TextBox Серия;
+        private System.Windows.Forms.TextBox Др;
+        private System.Windows.Forms.TextBox Отчество;
+        private System.Windows.Forms.TextBox Фамилия;
+        private System.Windows.Forms.TextBox Имя;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox1;
